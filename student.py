@@ -16,4 +16,4 @@ class Student(Person):
         pass
 
     def is_part_time(self):
-        pass
+        return len(self.enrolled) <= 3
