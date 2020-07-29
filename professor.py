@@ -1,4 +1,5 @@
 from person import Person
+from course import Course
 
 class Professor(Person):
     def __init__(self, first, last, dob, phone, address, salary):
@@ -13,4 +14,8 @@ class Professor(Person):
             self.salary += 20000
             self.got_raise = True
 
-    
+    def add_course(self, course):
+        if not isinstance(course, Course):
+            raise Error("Invalid courses")
+
+        self.courses.append(course)

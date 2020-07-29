@@ -1,2 +1,2 @@
-class Enrol:
+class Enroll:
     pass
